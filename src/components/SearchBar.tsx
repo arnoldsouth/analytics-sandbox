@@ -2,16 +2,16 @@ import Input_01 from "./kokonutui/input-01";
 import React from "react";
 
 interface SearchBarProps {
-  value: string;
+  // value: string;
   onChange: (value: string) => void;
   onKeyDown: (event: React.KeyboardEvent<HTMLInputElement>) => void;
   ariaLabel?: string;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({
-  value,
+  // value,
   onChange,
-  onKeyDown,
+  // onKeyDown,
   ariaLabel = "Search Pokemon",
 }) => {
   return (
@@ -20,7 +20,9 @@ const SearchBar: React.FC<SearchBarProps> = ({
         label={ariaLabel}
         placeholder="Pokemon name"
         type="text"
+        // value={value}
         onChange={onChange}
+        // onKeyDown={onKeyDown}
       />
     </div>
   );
