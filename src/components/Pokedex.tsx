@@ -129,7 +129,7 @@ const Pokedex: React.FC = () => {
         </p> */}
         <div className="w-full max-w-xs mx-auto relative">
           <SearchBar
-            value={search}
+            // value={search}
             onChange={handleSearchChange}
             onKeyDown={handleKeyDown}
           />
